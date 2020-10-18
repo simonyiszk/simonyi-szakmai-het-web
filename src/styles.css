@@ -2,4 +2,29 @@
 
 @import "tailwindcss/components";
 
+@import "fonts.css";
+
 @import "tailwindcss/utilities";
+
+body {
+	@apply bg-backgroundBlue;
+	@apply text-text;
+	@apply font-FuturaBT;
+	@apply relative;
+}
+
+h1 {
+	@apply font-Boldstrom;
+}
+
+.fullWidthCenter {
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	object-fit: cover;
+}

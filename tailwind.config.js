@@ -7,7 +7,22 @@ module.exports = {
 	},
 	purge: ["./src/**/*.{js,ts,tsx}"],
 	theme: {
-		extend: {},
+		extend: {
+			colors: {
+				text: "#e5e5e5",
+				backgroundBlue: "#32293C",
+				primary: "#F7A921",
+				secondary: "#ED3A3C",
+			},
+			fontFamily: {
+				Boldstrom: "Boldstrom",
+				FuturaBT: "FuturaBT",
+			},
+			width: {
+				minContent: "min-content",
+				fitContent: "fit-content",
+			},
+		},
 	},
 	variants: {},
 	plugins: [],

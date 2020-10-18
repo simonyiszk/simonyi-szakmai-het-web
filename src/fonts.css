@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "FuturaBT";
+	src: url("../public/static/webfonts/futuralightbt.eot");
+	src: url("../public/static/webfonts/futuralightbt.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/futuralightbt.otf") format("opentype"),
+		url("../public/static/webfonts/futuralightbt.svg") format("svg"),
+		url("../public/static/webfonts/futuralightbt.ttf") format("truetype"),
+		url("../public/static/webfonts/futuralightbt.woff") format("woff"),
+		url("../public/static/webfonts/futuralightbt.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Boldstrom";
+	src: url("../public/static/webfonts/BoldstromD.eot");
+	src: url("../public/static/webfonts/BoldstromD.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/BoldstromD.otf") format("opentype"),
+		url("../public/static/webfonts/BoldstromD.svg") format("svg"),
+		url("../public/static/webfonts/BoldstromD.ttf") format("truetype"),
+		url("../public/static/webfonts/BoldstromD.woff") format("woff"),
+		url("../public/static/webfonts/BoldstromD.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FuturaBT";
+	src: url("../public/static/webfonts/FuturaLightItalicfont.eot");
+	src: url("../public/static/webfonts/FuturaLightItalicfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/FuturaLightItalicfont.otf")
+			format("opentype"),
+		url("../public/static/webfonts/FuturaLightItalicfont.svg") format("svg"),
+		url("../public/static/webfonts/FuturaLightItalicfont.ttf")
+			format("truetype"),
+		url("../public/static/webfonts/FuturaLightItalicfont.woff") format("woff"),
+		url("../public/static/webfonts/FuturaLightItalicfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "FuturaBT";
+	src: url("../public/static/webfonts/FuturaHeavyfont.eot");
+	src: url("../public/static/webfonts/FuturaHeavyfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/FuturaHeavyfont.otf") format("opentype"),
+		url("../public/static/webfonts/FuturaHeavyfont.svg") format("svg"),
+		url("../public/static/webfonts/FuturaHeavyfont.ttf") format("truetype"),
+		url("../public/static/webfonts/FuturaHeavyfont.woff") format("woff"),
+		url("../public/static/webfonts/FuturaHeavyfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FuturaBT";
+	src: url("../public/static/webfonts/FuturaHeavyItalicfont.eot");
+	src: url("../public/static/webfonts/FuturaHeavyItalicfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/FuturaHeavyItalicfont.otf")
+			format("opentype"),
+		url("../public/static/webfonts/FuturaHeavyItalicfont.svg") format("svg"),
+		url("../public/static/webfonts/FuturaHeavyItalicfont.ttf")
+			format("truetype"),
+		url("../public/static/webfonts/FuturaHeavyItalicfont.woff") format("woff"),
+		url("../public/static/webfonts/FuturaHeavyItalicfont.woff2") format("woff2");
+	font-weight: bold;
+	font-style: italic;
+}
