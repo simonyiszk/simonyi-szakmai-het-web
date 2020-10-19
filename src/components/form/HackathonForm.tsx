@@ -12,7 +12,7 @@ type FormDataType = {
 };
 
 export function HackathonForm() {
-	const { register, handleSubmit, errors } = useForm();
+	const { register, handleSubmit, errors } = useForm<FormDataType>();
 	const { addToast } = useToasts();
 
 	function reply(error: Error | null) {
