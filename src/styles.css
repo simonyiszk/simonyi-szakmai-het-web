@@ -6,11 +6,27 @@
 
 @import "tailwindcss/utilities";
 
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+:target {
+	scroll-snap-margin-top: 6rem;
+	scroll-margin-top: 6rem;
+}
+
 body {
 	@apply bg-backgroundBlue;
 	@apply text-text;
 	@apply font-FuturaBT;
 	@apply relative;
+	@apply overflow-x-hidden;
 }
 
 h1 {

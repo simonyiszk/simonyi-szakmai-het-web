@@ -1,4 +1,4 @@
-export function Footer() {
+export function Footer(): JSX.Element {
 	return (
 		<footer className="w-full bg-secondary">
 			<div className="container flex flex-1 p-4 justify-between mx-auto flex-col md:flex-row">

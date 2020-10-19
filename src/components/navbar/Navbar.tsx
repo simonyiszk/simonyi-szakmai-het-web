@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Navbar(): JSX.Element {
 	return (
-		<nav className="p-4 flex justify-between content-center sticky top-0 text-xl z-10">
+		<nav className="p-4 flex justify-between content-center sticky top-0 text-xl z-20">
 			<Link href="/">
 				<a className="font-Boldstrom">LOGO</a>
 			</Link>
