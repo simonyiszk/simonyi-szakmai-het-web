@@ -87,7 +87,7 @@ export function HackathonForm() {
 					type="number"
 					placeholder="Évfolyam*"
 					name="grade"
-					ref={register({ required: true })}
+					ref={register({ required: true, min: 1 })}
 					className="bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic w-full"
 				/>
 				{errors.grade && (
@@ -105,7 +105,7 @@ export function HackathonForm() {
 				className="col-span-2 bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic"
 			/>
 			{errors.team && (
-				<p className="text-secondary text-sm pt-1">
+				<p className="text-secondary text-sm pt-1 col-span-2">
 					Kérjük adj meg egy csapatnevet
 				</p>
 			)}
@@ -118,16 +118,16 @@ export function HackathonForm() {
 				className="col-span-2 bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic"
 			/>
 			{errors.job && (
-				<p className="text-secondary text-sm pt-1">
+				<p className="text-secondary text-sm pt-1 col-span-2">
 					Kérjük add meg a munkaköröd
 				</p>
 			)}
 
 			<button
 				type="submit"
-				className="col-span-2 p-4 border-2 border-primary mt-4 bg-secondary text-xl"
+				className="col-span-2 p-1 border-2 border-primary mt-4"
 			>
-				Jelentkezés
+				<div className="p-4 w-full bg-secondary text-xl">Jelentkezés</div>
 			</button>
 		</form>
 	);
