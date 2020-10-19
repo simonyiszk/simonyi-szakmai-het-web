@@ -32,7 +32,7 @@ export default function Page(): React.ReactElement | null {
 				officia deserunt mollit anim id est laborum.
 			</p>
 
-			<Divider />
+			{/* <Divider /> */}
 
 			<div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-12 mt-8">
 				<div>
