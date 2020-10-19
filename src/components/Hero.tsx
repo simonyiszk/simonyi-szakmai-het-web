@@ -4,7 +4,7 @@ import Link from "next/link";
 export function Hero(): JSX.Element {
 	return (
 		<>
-			<div style={{ minHeight: "17vh", height: "17vh" }} />
+			<div style={{ minHeight: "22vh", height: "22vh" }} />
 
 			<h1 className="text-5xl sm:text-6xl">
 				Simonyi
@@ -24,7 +24,7 @@ export function Hero(): JSX.Element {
 				</a>
 			</Link>
 
-			<div style={{ minHeight: "17vh", height: "17vh" }} />
+			<div style={{ minHeight: "22vh", height: "22vh" }} />
 		</>
 	);
 }
