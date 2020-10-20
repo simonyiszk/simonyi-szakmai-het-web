@@ -30,7 +30,7 @@ export default function Page(): React.ReactElement | null {
 				<br />
 				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 				officia deserunt mollit anim id est laborum.
-				<div
+				<span
 					className="rounded-full w-48 h-48 absolute transform -rotate-45 -z-1"
 					style={{
 						background:
@@ -39,7 +39,7 @@ export default function Page(): React.ReactElement | null {
 						right: "5rem",
 					}}
 				/>
-				<div
+				<span
 					className="rounded-full w-24 h-24 absolute transform rotate-45 -z-1"
 					style={{
 						background:
@@ -69,7 +69,7 @@ export default function Page(): React.ReactElement | null {
 						<br />
 						Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur.
-						<div
+						<span
 							className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
 							style={{
 								background:
@@ -78,13 +78,13 @@ export default function Page(): React.ReactElement | null {
 								right: "5rem",
 							}}
 						/>
-						<div
-							className="rounded-full w-48 h-48 absolute transform rotate-45 -z-1"
+						<span
+							className="rounded-full w-48 h-48 absolute transform rotate-90 -z-1"
 							style={{
 								background:
 									"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-								top: "-2rem",
-								right: "-2rem",
+								top: 0,
+								right: 0,
 							}}
 						/>
 					</p>
