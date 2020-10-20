@@ -15,6 +15,9 @@ module.exports = {
 				mobileSpacer: "15vh",
 				desktopSpacer: "28vh",
 			},
+			maxHeight: {
+				"280px": "280px",
+			},
 			colors: {
 				text: "#e5e5e5",
 				backgroundBlue: "#32293C",

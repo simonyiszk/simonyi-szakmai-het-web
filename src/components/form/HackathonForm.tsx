@@ -128,15 +128,10 @@ export function HackathonForm() {
 				type="submit"
 				className={clsx(
 					"col-span-2 p-1 border-2 border-primary mt-4",
-					"duration-100 ease-linear transition-all hover:p-0",
+					"animatedButton",
 				)}
 			>
-				<div
-					className={clsx(
-						"p-4 w-full bg-secondary text-xl",
-						"duration-100 ease-linear transition-all hover:p-5",
-					)}
-				>
+				<div className={clsx("p-4 w-full bg-secondary text-xl")}>
 					Jelentkezés
 				</div>
 			</button>

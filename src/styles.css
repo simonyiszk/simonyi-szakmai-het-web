@@ -56,3 +56,18 @@ h1 {
 	margin-right: -50vw;
 	object-fit: cover;
 }
+
+.animatedButton,
+.animatedButton div {
+	@apply duration-100;
+	@apply ease-linear;
+	@apply transition-all;
+}
+
+.animatedButton:hover {
+	@apply p-0;
+}
+
+.animatedButton:hover div {
+	@apply p-5;
+}
