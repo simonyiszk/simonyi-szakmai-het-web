@@ -10,7 +10,7 @@ export default function Page(): React.ReactElement | null {
 		<Layout>
 			<Hero />
 
-			<Divider hasSticky />
+			{/* <Divider hasSticky /> */}
 
 			<h2
 				id="rolunk"

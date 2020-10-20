@@ -13,16 +13,16 @@
 }
 
 @font-face {
-	font-family: "Boldstrom";
-	src: url("../public/static/webfonts/BoldstromD.eot");
-	src: url("../public/static/webfonts/BoldstromD.eot?#iefix")
+	font-family: "FuturaBT";
+	src: url("../public/static/webfonts/FuturaExtraBlackfont.eot");
+	src: url("../public/static/webfonts/FuturaExtraBlackfont.eot?#iefix")
 			format("embedded-opentype"),
-		url("../public/static/webfonts/BoldstromD.otf") format("opentype"),
-		url("../public/static/webfonts/BoldstromD.svg") format("svg"),
-		url("../public/static/webfonts/BoldstromD.ttf") format("truetype"),
-		url("../public/static/webfonts/BoldstromD.woff") format("woff"),
-		url("../public/static/webfonts/BoldstromD.woff2") format("woff2");
-	font-weight: normal;
+		url("../public/static/webfonts/FuturaExtraBlackfont.otf") format("opentype"),
+		url("../public/static/webfonts/FuturaExtraBlackfont.svg") format("svg"),
+		url("../public/static/webfonts/FuturaExtraBlackfont.ttf") format("truetype"),
+		url("../public/static/webfonts/FuturaExtraBlackfont.woff") format("woff"),
+		url("../public/static/webfonts/FuturaExtraBlackfont.woff2") format("woff2");
+	font-weight: 900;
 	font-style: normal;
 }
 
@@ -70,4 +70,18 @@
 		url("../public/static/webfonts/FuturaHeavyItalicfont.woff2") format("woff2");
 	font-weight: bold;
 	font-style: italic;
+}
+
+@font-face {
+	font-family: "Boldstrom";
+	src: url("../public/static/webfonts/BoldstromD.eot");
+	src: url("../public/static/webfonts/BoldstromD.eot?#iefix")
+			format("embedded-opentype"),
+		url("../public/static/webfonts/BoldstromD.otf") format("opentype"),
+		url("../public/static/webfonts/BoldstromD.svg") format("svg"),
+		url("../public/static/webfonts/BoldstromD.ttf") format("truetype"),
+		url("../public/static/webfonts/BoldstromD.woff") format("woff"),
+		url("../public/static/webfonts/BoldstromD.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
 }

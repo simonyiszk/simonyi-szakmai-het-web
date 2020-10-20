@@ -6,6 +6,14 @@
 
 @import "tailwindcss/utilities";
 
+:root,
+.root,
+#root,
+#docs-root {
+	--pc-background: "static/images/pc.png";
+	--mobile-background: "static/images/mobile.png";
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -41,12 +49,13 @@ body {
 }
 
 h1 {
-	@apply font-Boldstrom;
+	@apply font-FuturaBT;
+	@apply font-black;
 }
 
 .fullWidthCenter {
 	width: 100vw;
-	height: 100%;
+	/* height: 100%; */
 	position: absolute;
 	top: 0;
 	left: 50%;

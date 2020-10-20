@@ -4,9 +4,22 @@ import Link from "next/link";
 export function Hero(): JSX.Element {
 	return (
 		<>
-			<div style={{ minHeight: "22vh", height: "22vh" }} />
+			<div className="relative w-full" style={{ zIndex: -1 }}>
+				<div
+					className="fullWidthCenter transform rotate-180 bg-hero-mobile md:bg-hero-pc h-1334px md:h-1080px bg-cover"
+					style={{
+						backgroundPosition: "center",
+						top: "-120px",
+					}}
+				>
+					<img src="static/images/mobile.png" alt="" className="hidden" />
+					<img src="static/images/pc.png" alt="" className="hidden" />
+				</div>
+			</div>
 
-			<h1 className="text-5xl sm:text-6xl">
+			<div style={{ minHeight: "31vh", height: "31vh" }} />
+
+			<h1 className="text-5xl sm:text-6xl uppercase">
 				Simonyi
 				<br />
 				<span className="text-primary">Szakmai</span> Hét
@@ -16,15 +29,22 @@ export function Hero(): JSX.Element {
 			<Link href="#jelentkezes">
 				<a
 					className={clsx(
-						"font-bold border-primary border-2 p-4 m-4 lg:ml-48 text-2xl block",
+						"border-primary border-2 p-1 m-4 lg:ml-48 block",
 						"w-minContent sm:w-fitContent",
 					)}
 				>
-					Hackathon jelentkezés
+					<div
+						className={clsx(
+							"font-bold p-4 text-2xl bg-secondary",
+							"w-minContent sm:w-fitContent",
+						)}
+					>
+						Hackathon jelentkezés
+					</div>
 				</a>
 			</Link>
 
-			<div style={{ minHeight: "22vh", height: "22vh" }} />
+			<div style={{ minHeight: "32vh", height: "32vh" }} />
 		</>
 	);
 }

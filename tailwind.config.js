@@ -8,6 +8,10 @@ module.exports = {
 	purge: ["./src/**/*.{js,ts,tsx}"],
 	theme: {
 		extend: {
+			height: {
+				"1080px": "1080px",
+				"1334px": "1334px",
+			},
 			colors: {
 				text: "#e5e5e5",
 				backgroundBlue: "#32293C",
@@ -22,6 +26,10 @@ module.exports = {
 				minContent: "min-content",
 				fitContent: "fit-content",
 			},
+			backgroundImage: (theme) => ({
+				"hero-pc": "url('/static/images/pc.png')",
+				"hero-mobile": "url('/static/images/mobile.png')",
+			}),
 		},
 	},
 	variants: {},
