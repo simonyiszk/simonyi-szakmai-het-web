@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import firebase from "firebase";
 import { useForm } from "react-hook-form";
 import { useToasts } from "react-toast-notifications";
@@ -125,9 +126,19 @@ export function HackathonForm() {
 
 			<button
 				type="submit"
-				className="col-span-2 p-1 border-2 border-primary mt-4"
+				className={clsx(
+					"col-span-2 p-1 border-2 border-primary mt-4",
+					"duration-100 ease-linear transition-all hover:p-0",
+				)}
 			>
-				<div className="p-4 w-full bg-secondary text-xl">Jelentkezés</div>
+				<div
+					className={clsx(
+						"p-4 w-full bg-secondary text-xl",
+						"duration-100 ease-linear transition-all hover:p-5",
+					)}
+				>
+					Jelentkezés
+				</div>
 			</button>
 		</form>
 	);

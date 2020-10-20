@@ -47,12 +47,14 @@ export function Hero(): JSX.Element {
 					className={clsx(
 						"border-primary border-2 p-1 m-4 lg:ml-48 block mx-auto",
 						"w-minContent sm:w-fitContent",
+						"duration-100 ease-linear transition-all hover:p-0",
 					)}
 				>
 					<div
 						className={clsx(
 							"font-bold p-4 text-2xl bg-secondary",
 							"w-minContent sm:w-fitContent",
+							"duration-100 ease-linear transition-all hover:p-5",
 						)}
 					>
 						Hackathon jelentkezés

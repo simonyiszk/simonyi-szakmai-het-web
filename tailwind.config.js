@@ -41,6 +41,8 @@ module.exports = {
 			},
 		},
 	},
-	variants: {},
+	variants: {
+		padding: ["responsive", "hover", "focus"],
+	},
 	plugins: [],
 };
