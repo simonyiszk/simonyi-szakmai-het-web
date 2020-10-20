@@ -30,6 +30,9 @@ module.exports = {
 				"hero-pc": "url('/static/images/pc.png')",
 				"hero-mobile": "url('/static/images/mobile.png')",
 			}),
+			zIndex: {
+				"-1": -1,
+			},
 		},
 	},
 	variants: {},

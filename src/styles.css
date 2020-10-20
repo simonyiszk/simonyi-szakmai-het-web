@@ -6,14 +6,6 @@
 
 @import "tailwindcss/utilities";
 
-:root,
-.root,
-#root,
-#docs-root {
-	--pc-background: "static/images/pc.png";
-	--mobile-background: "static/images/mobile.png";
-}
-
 html {
 	scroll-behavior: smooth;
 }

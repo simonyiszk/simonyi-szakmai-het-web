@@ -4,12 +4,12 @@ import Link from "next/link";
 export function Hero(): JSX.Element {
 	return (
 		<>
-			<div className="relative w-full" style={{ zIndex: -1 }}>
+			<div className="relative w-full -z-1">
 				<div
 					className="fullWidthCenter transform rotate-180 bg-hero-mobile md:bg-hero-pc h-1334px md:h-1080px bg-cover"
 					style={{
 						backgroundPosition: "center",
-						top: "-120px",
+						top: "-62px",
 					}}
 				>
 					<img src="static/images/mobile.png" alt="" className="hidden" />
