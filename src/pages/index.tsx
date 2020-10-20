@@ -17,7 +17,7 @@ export default function Page(): React.ReactElement | null {
 				className="font-bold text-primary text-4xl border-b-8 border-primary mt-8"
 				style={{ lineHeight: "1.5rem" }}
 			>
-				Rólunk
+				A rendezvényről
 			</h2>
 
 			<p className="border-l-8 border-primary p-4 pb-16 mb-16 text-lg relative">

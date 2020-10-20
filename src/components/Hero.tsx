@@ -17,19 +17,35 @@ export function Hero(): JSX.Element {
 				</div>
 			</div>
 
-			<div style={{ minHeight: "31vh", height: "31vh" }} />
+			<div className="h-mobileSpacer md:h-desktopSpacer" />
 
-			<h1 className="text-5xl sm:text-6xl uppercase">
-				Simonyi
-				<br />
-				<span className="text-primary">Szakmai</span> Hét
+			<div className="relative block md:hidden">
+				<h1
+					className="text-5xl uppercase transform rotate-90 block absolute top-0 left-0 origin-top-left"
+					style={{ marginLeft: "48px" }}
+				>
+					Simonyi
+				</h1>
+			</div>
+			<h1 className="text-5xl md:text-7xl uppercase">
+				<span className="hidden md:inline">
+					Simonyi
+					<br />
+				</span>
+				<div className="pl-12 md:pl-0">
+					<span className="text-primary">Szakmai</span>
+					<span className="md:hidden">
+						<br />
+					</span>{" "}
+					Hét
+				</div>
 			</h1>
-			<h2 className="text-xl">November 13 - 18</h2>
+			<h2 className="pl-12 md:pl-0 text-2xl mb-32 md:mb-8">November 13 - 18</h2>
 
 			<Link href="#jelentkezes">
 				<a
 					className={clsx(
-						"border-primary border-2 p-1 m-4 lg:ml-48 block",
+						"border-primary border-2 p-1 m-4 lg:ml-48 block mx-auto",
 						"w-minContent sm:w-fitContent",
 					)}
 				>
@@ -44,7 +60,7 @@ export function Hero(): JSX.Element {
 				</a>
 			</Link>
 
-			<div style={{ minHeight: "32vh", height: "32vh" }} />
+			<div className="h-desktopSpacer" />
 		</>
 	);
 }

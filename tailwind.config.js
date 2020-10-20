@@ -12,6 +12,8 @@ module.exports = {
 				"60px": "60px",
 				"1080px": "1080px",
 				"1334px": "1334px",
+				mobileSpacer: "15vh",
+				desktopSpacer: "28vh",
 			},
 			colors: {
 				text: "#e5e5e5",
@@ -33,6 +35,9 @@ module.exports = {
 			}),
 			zIndex: {
 				"-1": -1,
+			},
+			fontSize: {
+				"7xl": "6rem",
 			},
 		},
 	},
