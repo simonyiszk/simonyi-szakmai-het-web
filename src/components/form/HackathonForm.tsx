@@ -35,7 +35,7 @@ export function HackathonForm(): JSX.Element {
 		const tempTeamNames: Array<{ value: string; label: string }> = [];
 		firebase
 			.database()
-			.ref("/applications/test")
+			.ref("/applications")
 			.on("value", (snapshot) => {
 				snapshot.forEach((element) => {
 					const tempTeamName = element.val().team;
@@ -73,7 +73,7 @@ export function HackathonForm(): JSX.Element {
 
 	function onSubmit(data: FormValuesType) {
 		// console.log(data);
-		firebase.database().ref("/applications/test").push(data, reply);
+		firebase.database().ref("/applications").push(data, reply);
 	}
 
 	const selectStyle: Partial<Styles> = {
