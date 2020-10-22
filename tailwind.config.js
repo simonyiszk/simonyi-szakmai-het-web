@@ -27,6 +27,7 @@ module.exports = {
 			fontFamily: {
 				Boldstrom: "Boldstrom",
 				FuturaBT: "FuturaBT",
+				Kanit: "Kanit",
 			},
 			width: {
 				minContent: "min-content",

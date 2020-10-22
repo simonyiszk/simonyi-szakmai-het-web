@@ -35,13 +35,13 @@ html {
 body {
 	@apply bg-backgroundBlue;
 	@apply text-text;
-	@apply font-FuturaBT;
+	@apply font-Kanit;
 	@apply relative;
 	@apply overflow-x-hidden;
 }
 
 h1 {
-	@apply font-FuturaBT;
+	@apply font-Kanit;
 	@apply font-black;
 }
 

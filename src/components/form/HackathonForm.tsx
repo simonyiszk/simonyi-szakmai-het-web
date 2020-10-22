@@ -3,9 +3,8 @@ import "firebase/database";
 import clsx from "clsx";
 import * as firebase from "firebase/app";
 import * as React from "react";
-import { Controller, useForm } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import type { Styles } from "react-select";
-import Select from "react-select/";
 import CreatableSelect from "react-select/creatable";
 import { useToasts } from "react-toast-notifications";
 
@@ -27,7 +26,7 @@ export function HackathonForm(): JSX.Element {
 	>();
 	const [isStudent, toggleIsStudent] = React.useState<boolean>(false);
 
-	const { register, handleSubmit, control, errors, setValue } = useForm<
+	const { register, handleSubmit, errors, setValue, getValues } = useForm<
 		FormValuesType
 	>();
 	const { addToast } = useToasts();
@@ -40,7 +39,13 @@ export function HackathonForm(): JSX.Element {
 			.on("value", (snapshot) => {
 				snapshot.forEach((element) => {
 					const tempTeamName = element.val().team;
-					if (typeof tempTeamName === "string")
+					if (
+						typeof tempTeamName === "string" &&
+						!tempTeamNames.includes({
+							value: tempTeamName,
+							label: tempTeamName,
+						})
+					)
 						tempTeamNames.push({ value: tempTeamName, label: tempTeamName });
 				});
 				// console.log(tempTeamNames);
@@ -140,7 +145,7 @@ export function HackathonForm(): JSX.Element {
 						setValue("team", e.value);
 				}}
 			/>
-			{errors.team && (
+			{getValues("team") === "" && (
 				<p className="text-secondary text-sm pt-1 col-span-2">
 					Kérjük adj meg egy csapatnevet
 				</p>
@@ -158,7 +163,7 @@ export function HackathonForm(): JSX.Element {
 					name="isStudent"
 					id="isStudentCheckbox"
 					ref={register({ required: false })}
-					className="bg-transparent p-3"
+					className="bg-transparent p-3 cursor-pointer"
 					onChange={(e) => {
 						toggleIsStudent(e.target.checked);
 					}}

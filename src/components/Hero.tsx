@@ -22,7 +22,7 @@ export function Hero(): JSX.Element {
 			<div className="relative block md:hidden w-0">
 				<h1
 					className="text-5xl uppercase transform -rotate-90 block absolute top-0 left-0 origin-top-left"
-					style={{ marginTop: "14.4rem" }}
+					style={{ marginTop: "12.75rem" }}
 				>
 					Simonyi
 				</h1>
