@@ -147,7 +147,7 @@ export function HackathonForm(): JSX.Element {
 			)}
 
 			<select
-				className="col-span-2 w-full bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic appearance-none"
+				className="col-span-2 w-full bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic"
 				onChange={(e) => {
 					setOccupation(e.target.value);
 				}}
@@ -160,7 +160,7 @@ export function HackathonForm(): JSX.Element {
 						<option
 							key={e.value}
 							value={e.value}
-							className="bg-backgroundBlue p-3"
+							className="bg-backgroundBlue p-3 my-2"
 						>
 							{e.label}
 						</option>
