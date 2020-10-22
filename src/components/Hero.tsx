@@ -19,10 +19,10 @@ export function Hero(): JSX.Element {
 
 			<div className="h-mobileSpacer md:h-desktopSpacer max-h-280px" />
 
-			<div className="relative block md:hidden">
+			<div className="relative block md:hidden w-0">
 				<h1
-					className="text-5xl uppercase transform rotate-90 block absolute top-0 left-0 origin-top-left"
-					style={{ marginLeft: "48px" }}
+					className="text-5xl uppercase transform -rotate-90 block absolute top-0 left-0 origin-top-left"
+					style={{ marginTop: "14.4rem" }}
 				>
 					Simonyi
 				</h1>
