@@ -8,7 +8,7 @@ export function MiniKonf(): JSX.Element {
 					className="font-bold text-primary text-4xl"
 					style={{ lineHeight: "1.5rem", marginLeft: "-1px" }}
 				>
-					Mini konferencia
+					Minikonferencia 11.17.–11.18.
 				</h2>
 				<p
 					className="border-l-8 border-b-8 border-primary p-4 pb-16 text-lg relative"

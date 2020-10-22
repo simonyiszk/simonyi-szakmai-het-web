@@ -8,7 +8,7 @@ export function SzakmaiEst(): JSX.Element {
 					className="font-bold text-primary text-4xl"
 					style={{ lineHeight: "1.5rem", marginLeft: "-0.44px" }}
 				>
-					Szakmai est
+					Szakmai e-Est 11.16.
 				</h2>
 				<p
 					className="border-l-8 border-primary p-4 pb-16 text-lg relative"

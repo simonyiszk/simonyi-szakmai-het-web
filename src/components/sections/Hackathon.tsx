@@ -9,7 +9,7 @@ export function Hackathon(): JSX.Element {
 					className="font-bold text-primary text-4xl"
 					style={{ lineHeight: "1.5rem", marginLeft: "-1px" }}
 				>
-					Hackathon
+					Hackathon 11.13.–11.15.
 				</h2>
 				<p
 					className="border-l-8 border-primary p-4 pb-16 text-lg relative"
