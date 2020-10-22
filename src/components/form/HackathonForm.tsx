@@ -146,24 +146,26 @@ export function HackathonForm(): JSX.Element {
 				</p>
 			)}
 
-			<div
+			<label
+				htmlFor="isStudentCheckbox"
 				className={clsx(
-					"col-span-2 p-3 pb-1 border-b-2 border-primary italic",
+					"col-span-2 p-3 pb-1 border-b-2 border-primary italic text-lg cursor-pointer",
 					isStudent ? "sm:col-span-1 sm:mr-2" : "sm:col-span-2 sm:mr-0",
 				)}
 			>
 				<input
 					type="checkbox"
 					name="isStudent"
+					id="isStudentCheckbox"
 					ref={register({ required: false })}
-					className="bg-transparent"
+					className="bg-transparent p-3"
 					onChange={(e) => {
 						toggleIsStudent(e.target.checked);
 					}}
 					checked={isStudent}
 				/>
-				<span className="text-lg p-3 pb-1">Egyetemista vagyok</span>
-			</div>
+				<span className="pl-3">Egyetemista vagyok</span>
+			</label>
 
 			<div
 				className={clsx(
