@@ -14,18 +14,18 @@ import { Input } from "./Input";
 type FormValuesType = {
 	name: string;
 	email: string;
+	team: string;
+	isStudent: boolean;
 	university?: string;
 	startYear?: number;
-	team: string;
-	job?: string;
-	workplace?: string;
+	major?: string;
 };
 
 export function HackathonForm(): JSX.Element {
 	const [onlineTeamNames, setOnlineTeamNames] = React.useState<
 		Array<{ value: string; label: string }>
 	>();
-	const [occupation, setOccupation] = React.useState<string>("egyetemista");
+	const [isStudent, toggleIsStudent] = React.useState<boolean>(false);
 
 	const { register, handleSubmit, control, errors, setValue } = useForm<
 		FormValuesType
@@ -146,32 +146,29 @@ export function HackathonForm(): JSX.Element {
 				</p>
 			)}
 
-			<select
-				className="col-span-2 w-full bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic"
-				onChange={(e) => {
-					setOccupation(e.target.value);
-				}}
+			<div
+				className={clsx(
+					"col-span-2 sm:col-span-1 sm:mr-2 p-3 pb-1 border-b-2 border-primary italic",
+					isStudent ? "" : "sm:col-span-2",
+				)}
 			>
-				{[
-					{ value: "egyetemista", label: "Egyetemista" },
-					{ value: "munkás", label: "Munkás" },
-				].map((e) => {
-					return (
-						<option
-							key={e.value}
-							value={e.value}
-							className="bg-backgroundBlue p-3 my-2"
-						>
-							{e.label}
-						</option>
-					);
-				})}
-			</select>
+				<input
+					type="checkbox"
+					name="isStudent"
+					ref={register({ required: false })}
+					className="bg-transparent"
+					onChange={(e) => {
+						toggleIsStudent(e.target.checked);
+					}}
+					checked={isStudent}
+				/>
+				<span className="text-lg p-3 pb-1">Egyetemista vagyok</span>
+			</div>
 
 			<div
 				className={clsx(
-					"col-span-2 sm:col-span-1 sm:mr-2",
-					occupation === "egyetemista" ? "" : "hidden",
+					"col-span-2 sm:col-span-1 sm:ml-2",
+					isStudent ? "" : "hidden",
 				)}
 			>
 				<Input
@@ -187,12 +184,12 @@ export function HackathonForm(): JSX.Element {
 			<div
 				className={clsx(
 					"col-span-2 sm:col-span-1 sm:mr-2",
-					occupation === "egyetemista" ? "" : "hidden",
+					isStudent ? "" : "hidden",
 				)}
 			>
 				<Input
 					type="number"
-					placeholder="Melyik évben kezdtél"
+					placeholder="Kezdés éve"
 					name="startYear"
 					ref={register({ required: false, min: 1900, max: 2020 })}
 					error={errors.startYear}
@@ -202,32 +199,16 @@ export function HackathonForm(): JSX.Element {
 
 			<div
 				className={clsx(
-					"col-span-2 sm:col-span-1 sm:mr-2",
-					occupation === "egyetemista" ? "hidden" : "",
+					"col-span-2 sm:col-span-1 sm:ml-2",
+					isStudent ? "" : "hidden",
 				)}
 			>
 				<Input
 					type="text"
-					placeholder="Munkahely"
-					name="workplace"
-					ref={register({ required: false, maxLength: 100 })}
-					error={errors.workplace}
-					errorElement="Rossz formátum"
-				/>
-			</div>
-
-			<div
-				className={clsx(
-					"col-span-2 sm:col-span-1 sm:mr-2",
-					occupation === "egyetemista" ? "hidden" : "",
-				)}
-			>
-				<Input
-					type="text"
-					placeholder="Munkakör"
-					name="job"
-					ref={register({ required: false, maxLength: 100 })}
-					error={errors.job}
+					placeholder="Szak"
+					name="major"
+					ref={register({ required: false, maxLength: 255 })}
+					error={errors.major}
 					errorElement="Rossz formátum"
 				/>
 			</div>
