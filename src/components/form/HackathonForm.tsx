@@ -149,7 +149,7 @@ export function HackathonForm(): JSX.Element {
 			<div
 				className={clsx(
 					"col-span-2 sm:col-span-1 sm:mr-2 p-3 pb-1 border-b-2 border-primary italic",
-					isStudent ? "" : "sm:col-span-2",
+					isStudent ? "" : "sm:col-span-2 sm:mr-0",
 				)}
 			>
 				<input
