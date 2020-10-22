@@ -166,6 +166,9 @@ export function HackathonForm(): JSX.Element {
 					className="bg-transparent p-3 cursor-pointer"
 					onChange={(e) => {
 						toggleIsStudent(e.target.checked);
+						setValue("university", "");
+						setValue("startYear", undefined);
+						setValue("major", "");
 					}}
 					checked={isStudent}
 				/>
@@ -228,9 +231,15 @@ export function HackathonForm(): JSX.Element {
 				)}
 			>
 				<div className={clsx("p-4 w-full bg-secondary text-xl")}>
-					Jelentkezés
+					Jelentkezés*
 				</div>
 			</button>
+
+			<p className="col-span-2 p-3 pb-0 text-gray-500 italic text-xs">
+				*A jelentkezéssel hozzájárulok, hogy a szervezők a megadott adataimat
+				kapcsolatfelvétel céljából felhasználják és azt a feladat készítők
+				számára átadják.
+			</p>
 		</form>
 	);
 }
