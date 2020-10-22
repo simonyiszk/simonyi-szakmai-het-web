@@ -1,7 +1,7 @@
-/* import "firebase/database"; */
+import "firebase/database";
 
 import clsx from "clsx";
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 import * as React from "react";
 import { Controller, useForm } from "react-hook-form";
 import type { Styles } from "react-select";
@@ -67,7 +67,7 @@ export function HackathonForm(): JSX.Element {
 	}
 
 	function onSubmit(data: FormValuesType) {
-		console.log(data);
+		// console.log(data);
 		firebase.database().ref("/applications/test").push(data, reply);
 	}
 
