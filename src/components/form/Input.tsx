@@ -1,41 +1,37 @@
-import clsx from "clsx";
+import React from "react";
 import type { FieldError } from "react-hook-form";
 
-declare type InputProps = {
-	colSpan: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10";
+declare type CustomInputProps = {
 	errorElement: React.ReactNode | string;
 	error: FieldError | undefined;
 };
-export function Input({
-	name,
-	colSpan,
-	error,
-	errorElement,
-	type,
-	placeholder,
-	ref,
-	...restProps
-}: InputProps &
+declare type InputProps = CustomInputProps &
 	React.DetailedHTMLProps<
 		React.InputHTMLAttributes<HTMLInputElement>,
 		HTMLInputElement
-	>): JSX.Element {
-	return (
-		<>
-			<input
-				type={type}
-				placeholder={placeholder}
-				name={name}
-				ref={ref}
-				className={clsx(
-					`col-span-${colSpan}`,
-					"w-full bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic",
+	>;
+
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
+	(
+		{ type, placeholder, name, error, errorElement, ...restProps }: InputProps,
+		ref,
+	) => {
+		return (
+			<>
+				<input
+					type={type}
+					placeholder={placeholder}
+					name={name}
+					ref={ref}
+					className="col-span-2 w-full bg-transparent text-lg p-3 pb-1 border-b-2 border-primary italic"
+					{...restProps}
+				/>
+				{error && (
+					<p className="text-secondary text-sm pt-1 col-span-2">
+						{errorElement}
+					</p>
 				)}
-				{...restProps}
-			/>
-			{error && (
-				<p className="text-secondary text-sm pt-1 col-span-2">{errorElement}</p>
-			)}
-		</>
-	);
-}
+			</>
+		);
+	},
+);
