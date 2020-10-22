@@ -142,7 +142,8 @@ export function HackathonForm(): JSX.Element {
 				onChange={(e) => {
 					if (e)
 						// @ts-expect-error -- Retarded React-Select
-						setValue("team", e.value);
+						setValue("team", e.value ?? "");
+					else setValue("team", "");
 				}}
 			/>
 			{getValues("team") === "" && (

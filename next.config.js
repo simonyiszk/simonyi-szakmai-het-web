@@ -1,13 +1,10 @@
 const withBundleAnalyzer = require("@next/bundle-analyzer");
 const withPlugins = require("next-compose-plugins");
 
+const basePath = process.env.NODE_ENV === "development" ? "" : "/szakmaihet";
+
 module.exports = {
-	basePath: "/szakmaihet",
-	async exportPathMap(defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
-		return {
-			"/": { page: "/" },
-		};
-	},
+	basePath,
 };
 
 /*
