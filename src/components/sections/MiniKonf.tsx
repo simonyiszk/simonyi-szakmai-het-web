@@ -2,13 +2,13 @@ import clsx from "clsx";
 
 export function MiniKonf(): JSX.Element {
 	return (
-		<div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-12 mt-8 mb-24 items-center">
+		<div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-12 mt-16 mb-24 items-center">
 			<div>
 				<h2
-					className="font-bold text-primary text-4xl"
-					style={{ lineHeight: "1.5rem", marginLeft: "-1px" }}
+					className="font-bold text-primary text-4xl sm:leading-6"
+					style={{ marginLeft: "-1px" }}
 				>
-					Minikonferencia 11.17.–11.18.
+					Minikonferencia 11.17.&#8209;11.18.
 				</h2>
 				<p
 					className="border-l-8 border-b-8 border-primary p-4 pb-16 text-lg relative"

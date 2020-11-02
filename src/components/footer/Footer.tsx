@@ -1,6 +1,6 @@
 export function Footer(): JSX.Element {
 	return (
-		<footer className="w-full bg-primary">
+		<footer className="w-full bg-primary absolute bottom-0">
 			<div className="container flex flex-1 p-4 justify-between mx-auto flex-col md:flex-row">
 				<a
 					href="https://vik.bme.hu"

@@ -42,24 +42,64 @@ export function Hero(): JSX.Element {
 			</h1>
 			<h2 className="pl-12 md:pl-0 text-2xl mb-32 md:mb-8">November 13 - 18</h2>
 
-			<Link href="#jelentkezes">
-				<a
-					className={clsx(
-						"border-primary border-2 p-1 m-4 lg:ml-48 block mx-auto",
-						"w-minContent sm:w-fitContent",
-						"animatedButton",
-					)}
-				>
-					<div
+			<div className="flex flex-col lg:flex-row">
+				<Link href="/hackathon">
+					<a
 						className={clsx(
-							"font-bold p-4 text-2xl bg-secondary",
+							"border-primary border-2 p-1 m-4 block mx-auto",
 							"w-minContent sm:w-fitContent",
+							"animatedButton",
 						)}
 					>
-						Hackathon jelentkezés
-					</div>
-				</a>
-			</Link>
+						<div
+							className={clsx(
+								"font-bold p-4 text-2xl bg-secondary",
+								"w-minContent sm:w-fitContent",
+							)}
+						>
+							Hackathon jelentkezés
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/minikonf">
+					<a
+						className={clsx(
+							"border-primary border-2 p-1 m-4 block mx-auto",
+							"w-minContent sm:w-fitContent",
+							"animatedButton",
+						)}
+					>
+						<div
+							className={clsx(
+								"font-bold p-4 text-2xl bg-secondary",
+								"w-minContent sm:w-fitContent",
+							)}
+						>
+							Minikonf jelentkezés
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/szakmaiest">
+					<a
+						className={clsx(
+							"border-primary border-2 p-1 m-4 block mx-auto",
+							"w-minContent sm:w-fitContent",
+							"animatedButton",
+						)}
+					>
+						<div
+							className={clsx(
+								"font-bold p-4 text-2xl bg-secondary",
+								"w-minContent sm:w-fitContent",
+							)}
+						>
+							Szakmai e&#8209;Est jelentkezés
+						</div>
+					</a>
+				</Link>
+			</div>
 
 			<div className="h-desktopSpacer max-h-280px" />
 		</>

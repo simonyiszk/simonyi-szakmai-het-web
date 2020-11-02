@@ -17,7 +17,7 @@ export function Layout({ children }: LayoutProps): JSX.Element {
 
 			<Navbar />
 
-			<main className="container flex flex-col flex-1 px-4 mx-auto">
+			<main className="container flex flex-col flex-1 px-4 mx-auto mb-16">
 				{children}
 			</main>
 

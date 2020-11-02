@@ -2,13 +2,13 @@ import clsx from "clsx";
 
 export function SzakmaiEst(): JSX.Element {
 	return (
-		<div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
+		<div className="grid w-full grid-cols-1 lg:grid-cols-2 gap-12 mt-16 mb-24 items-center">
 			<div>
 				<h2
-					className="font-bold text-primary text-4xl"
-					style={{ lineHeight: "1.5rem", marginLeft: "-0.44px" }}
+					className="font-bold text-primary text-4xl sm:leading-6"
+					style={{ marginLeft: "-0.44px" }}
 				>
-					Szakmai e-Est 11.16.
+					Szakmai e&#8209;Est 11.16.
 				</h2>
 				<p
 					className="border-l-8 border-primary p-4 pb-16 text-lg relative"

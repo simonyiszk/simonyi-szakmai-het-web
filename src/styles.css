@@ -32,12 +32,26 @@ html {
 	scroll-margin-top: 6rem;
 }
 
+html {
+	@apply relative;
+	@apply min-h-full;
+}
+
 body {
 	@apply bg-backgroundBlue;
 	@apply text-text;
 	@apply font-Kanit;
-	@apply relative;
 	@apply overflow-x-hidden;
+	@apply h-full;
+	@apply min-h-full;
+	@apply m-0;
+	margin-bottom: 272px;
+}
+
+@media (min-width: 768px) {
+	body {
+		margin-bottom: 112px;
+	}
 }
 
 h1 {

@@ -44,10 +44,15 @@ module.exports = {
 			fontSize: {
 				"7xl": "6rem",
 			},
+			lineHeight: {
+				initial: "initial",
+				5: "1.5rem",
+			},
 		},
 	},
 	variants: {
 		padding: ["responsive", "hover", "focus"],
+		textColor: ["responsive", "hover", "focus", "active"],
 	},
 	plugins: [],
 };
