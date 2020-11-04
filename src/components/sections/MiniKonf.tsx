@@ -11,7 +11,7 @@ export function MiniKonf(): JSX.Element {
 					Minikonferencia 11.17.&#8209;11.18.
 				</h2>
 				<p
-					className="border-l-8 border-b-8 border-primary p-4 pb-16 text-lg relative"
+					className="border-l-8 border-primary p-4 pb-16 text-lg relative"
 					style={{
 						borderLeftWidth: "7px",
 					}}
