@@ -29,7 +29,7 @@ export function Hackathon(): JSX.Element {
 					A rendezvény előtt lehetőséget biztosítunk a csapatformálásra.
 					<br />
 					<br />
-					Jelentkezési határidő <strong>11.08</strong>.
+					Jelentkezési határidő: <strong>11.08.</strong>
 					<span
 						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
 						style={{
