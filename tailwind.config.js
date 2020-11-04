@@ -48,6 +48,9 @@ module.exports = {
 				initial: "initial",
 				5: "1.5rem",
 			},
+			gridTemplateColumns: {
+				tablelg: "10rem 1fr",
+			},
 		},
 	},
 	variants: {
