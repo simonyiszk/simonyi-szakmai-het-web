@@ -16,6 +16,8 @@ export function SzakmaiEst(): JSX.Element {
 						borderLeftWidth: "7px",
 					}}
 				>
+					<div className="text-2xl">Megnyílt a regisztráció!</div>
+					<br />
 					A szakkollégium falai mögött állandóan folyik a munka, készülnek a
 					projektek. A Szakmai e-Esten megtudhatjátok, hogy tagjaink milyen
 					projekteken dolgoznak.

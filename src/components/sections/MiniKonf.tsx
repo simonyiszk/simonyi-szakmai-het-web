@@ -16,6 +16,8 @@ export function MiniKonf(): JSX.Element {
 						borderLeftWidth: "7px",
 					}}
 				>
+					<div className="text-2xl">Megnyílt a regisztráció!</div>
+					<br />
 					A Minikonferencián az informatika különböző területeiről hallhattok
 					előadásokat izgalmas előadásokat. Az esemény célja, hogy megmutassa az
 					érdeklődöknek az IT világ sokszínűségét, bővítse látókörüket.
