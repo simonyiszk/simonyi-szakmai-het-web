@@ -57,7 +57,7 @@ export function Hero(): JSX.Element {
 								"w-minContent sm:w-fitContent",
 							)}
 						>
-							Hackathon jelentkezés
+							Hackathon
 						</div>
 					</a>
 				</Link>
@@ -76,7 +76,7 @@ export function Hero(): JSX.Element {
 								"w-minContent sm:w-fitContent",
 							)}
 						>
-							Szakmai e&#8209;Est jelentkezés
+							Szakmai e&#8209;Est
 						</div>
 					</a>
 				</Link>
@@ -95,7 +95,7 @@ export function Hero(): JSX.Element {
 								"w-minContent sm:w-fitContent",
 							)}
 						>
-							Minikonferencia jelentkezés
+							Minikonferencia
 						</div>
 					</a>
 				</Link>
