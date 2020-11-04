@@ -19,13 +19,17 @@ export function Hackathon(): JSX.Element {
 				>
 					A Hackathon részvevőinek a célja, hogy megoldást kínáljanak a
 					partnereink által nyújtott problémákra. A rendezvény során a
-					versenyzők <strong>4-5 fős csapatokat</strong> alkotva, a
-					partnereinkkel együttműködve keltik életre ötleteiket.
+					versenyzők csapatokat alkotva keltik életre ötleteiket.
 					<br />
 					<br />
-					Ha érdekel a versenyzés és szeretnétek megmutatni, hogy a ti
-					csapatotok tudja a legjobban eladni az ötletét,{" "}
-					<strong>jelentkezzetek 11.08-ig.</strong> További részletek hamarosan.
+					Ha érdekel a versenyzés és szeretnéd megmutatni, hogy a te ötleted a
+					legjobb mind közül, jelentkezz egyénileg vagy legfeljebb 5 fős
+					csapatban.
+					<br />
+					A rendezvény előtt lehetőséget biztosítunk a csapatformálásra.
+					<br />
+					<br />
+					Jelentkezési határidő <strong>11.08</strong>.
 					<span
 						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
 						style={{

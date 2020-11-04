@@ -21,6 +21,10 @@ export function MiniKonf(): JSX.Element {
 					érdeklődöknek az IT világ sokszínűségét, bővítse látókörüket.
 					<br />
 					<br />
+					A konferencián a Simonyi Konferenciához képest hosszabb, mélyebb
+					tudást átadó előadásokra számíthattok.
+					<br />
+					<br />
 					Előadók és jelentkezés hamarosan.
 					<span
 						className="rounded-full w-32 h-32 absolute transform -rotate-90 -z-1"
