@@ -62,25 +62,6 @@ export function Hero(): JSX.Element {
 					</a>
 				</Link>
 
-				<Link href="/minikonf">
-					<a
-						className={clsx(
-							"border-primary border-2 p-1 m-4 block mx-auto",
-							"w-minContent sm:w-fitContent",
-							"animatedButton",
-						)}
-					>
-						<div
-							className={clsx(
-								"font-bold p-4 text-2xl bg-secondary",
-								"w-minContent sm:w-fitContent",
-							)}
-						>
-							Minikonf jelentkezés
-						</div>
-					</a>
-				</Link>
-
 				<Link href="/szakmaiest">
 					<a
 						className={clsx(
@@ -96,6 +77,25 @@ export function Hero(): JSX.Element {
 							)}
 						>
 							Szakmai e&#8209;Est jelentkezés
+						</div>
+					</a>
+				</Link>
+
+				<Link href="/minikonf">
+					<a
+						className={clsx(
+							"border-primary border-2 p-1 m-4 block mx-auto",
+							"w-minContent sm:w-fitContent",
+							"animatedButton",
+						)}
+					>
+						<div
+							className={clsx(
+								"font-bold p-4 text-2xl bg-secondary",
+								"w-minContent sm:w-fitContent",
+							)}
+						>
+							Minikonferencia jelentkezés
 						</div>
 					</a>
 				</Link>

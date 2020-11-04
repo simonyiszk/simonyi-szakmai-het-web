@@ -64,17 +64,6 @@ export function Navbar(): JSX.Element {
 						Hackathon
 					</a>
 				</Link>
-				<Link href="/minikonf">
-					<a
-						className={clsx(
-							"p-4 py-2 sm:py-1 hover:text-text focus:text-text",
-							router.pathname === "/minikonf" ? "text-white" : "text-gray-400",
-							"border-b-2 sm:border-b-0 sm:border-r-2 border-text",
-						)}
-					>
-						Minikonf
-					</a>
-				</Link>
 				<Link href="/szakmaiest">
 					<a
 						className={clsx(
@@ -82,9 +71,20 @@ export function Navbar(): JSX.Element {
 							router.pathname === "/szakmaiest"
 								? "text-white"
 								: "text-gray-400",
+							"border-b-2 sm:border-b-0 sm:border-r-2 border-text",
 						)}
 					>
 						Szakmai e-Est
+					</a>
+				</Link>
+				<Link href="/minikonf">
+					<a
+						className={clsx(
+							"p-4 py-2 sm:py-1 hover:text-text focus:text-text",
+							router.pathname === "/minikonf" ? "text-white" : "text-gray-400",
+						)}
+					>
+						Minikonferencia
 					</a>
 				</Link>
 			</nav>
