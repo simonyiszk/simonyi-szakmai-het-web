@@ -25,7 +25,7 @@ export function MiniKonf(): JSX.Element {
 					tudást átadó előadásokra számíthattok.
 					<br />
 					<br />
-					Előadók és jelentkezés hamarosan.
+					Előadók hamarosan.
 					<span
 						className="rounded-full w-32 h-32 absolute transform -rotate-90 -z-1"
 						style={{
@@ -52,6 +52,7 @@ export function MiniKonf(): JSX.Element {
 						"border-primary border-2 p-1 m-4 lg:ml-48 block mx-auto",
 						"w-minContent sm:w-fitContent",
 					)}
+					href="https://register.gotowebinar.com/register/25354049137631499"
 				>
 					<div
 						className={clsx(
@@ -59,7 +60,7 @@ export function MiniKonf(): JSX.Element {
 							"w-minContent sm:w-fitContent",
 						)}
 					>
-						Jelentkezés hamarosan
+						Jelentkezés
 					</div>
 				</a>
 			</div>

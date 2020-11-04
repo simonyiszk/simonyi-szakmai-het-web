@@ -24,7 +24,7 @@ export function SzakmaiEst(): JSX.Element {
 					képes elérni, jegyezd fel a naptáradba a dátumot.
 					<br />
 					<br />
-					Előadók és jelentkezés hamarosan.
+					Előadók hamarosan.
 					<span
 						className="rounded-full w-32 h-32 absolute transform -rotate-90 -z-1"
 						style={{
@@ -51,6 +51,7 @@ export function SzakmaiEst(): JSX.Element {
 						"border-primary border-2 p-1 m-4 lg:ml-48 block mx-auto",
 						"w-minContent sm:w-fitContent",
 					)}
+					href="https://attendee.gotowebinar.com/register/2544394562222126860"
 				>
 					<div
 						className={clsx(
@@ -58,7 +59,7 @@ export function SzakmaiEst(): JSX.Element {
 							"w-minContent sm:w-fitContent",
 						)}
 					>
-						Jelentkezés hamarosan
+						Jelentkezés
 					</div>
 				</a>
 			</div>
