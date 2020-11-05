@@ -1,6 +1,8 @@
 import { HackathonForm } from "components/form/HackathonForm";
 import React from "react";
 
+import Sicontact from "../../assets/logos/sicontact.svg";
+
 export function Hackathon(): JSX.Element {
 	return (
 		<div>
@@ -145,6 +147,40 @@ export function Hackathon(): JSX.Element {
 							<div>Eredményhirdetés</div>
 						</div>
 					</div>
+					<span
+						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
+						style={{
+							background:
+								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
+							top: "5rem",
+							right: "5rem",
+						}}
+					/>
+					<span
+						className="rounded-full w-48 h-48 absolute transform rotate-90 -z-1"
+						style={{
+							background:
+								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
+							top: 0,
+							right: 0,
+						}}
+					/>
+				</p>
+			</div>
+			<div className="w-full mt-16">
+				<h2
+					className="font-bold text-primary text-4xl sm:leading-6"
+					style={{ marginLeft: "-1px" }}
+				>
+					Támogató
+				</h2>
+				<p
+					className="border-l-8 border-primary p-4 pb-16 text-lg relative"
+					style={{
+						borderLeftWidth: "7px",
+					}}
+				>
+					<img src={Sicontact} alt="Sicontact logo" className="h-12 m-auto" />
 					<span
 						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
 						style={{
