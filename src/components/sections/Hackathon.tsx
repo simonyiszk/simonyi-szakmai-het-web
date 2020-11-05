@@ -63,7 +63,7 @@ export function Hackathon(): JSX.Element {
 					Nyeremény
 				</h2>
 				<p
-					className="border-l-8 border-primary p-4 pb-16 text-lg flex md:justify-center"
+					className="border-l-8 border-primary p-4 pb-16 text-lg relative flex md:justify-center"
 					style={{
 						borderLeftWidth: "7px",
 					}}
@@ -78,8 +78,8 @@ export function Hackathon(): JSX.Element {
 						style={{
 							background:
 								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: "5rem",
-							right: "5rem",
+							top: "15rem",
+							left: "5rem",
 						}}
 					/>
 					<span
@@ -87,8 +87,8 @@ export function Hackathon(): JSX.Element {
 						style={{
 							background:
 								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: 0,
-							right: 0,
+							top: "10rem",
+							left: 0,
 						}}
 					/>
 				</p>
@@ -101,7 +101,7 @@ export function Hackathon(): JSX.Element {
 					Programterv
 				</h2>
 				<p
-					className="border-l-8 border-primary p-4 pb-16 text-lg flex md:justify-center"
+					className="border-l-8 border-primary p-4 pb-16 text-lg relative flex md:justify-center"
 					style={{
 						borderLeftWidth: "7px",
 					}}
@@ -154,7 +154,7 @@ export function Hackathon(): JSX.Element {
 						style={{
 							background:
 								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: "5rem",
+							top: "20rem",
 							right: "5rem",
 						}}
 					/>
@@ -163,7 +163,7 @@ export function Hackathon(): JSX.Element {
 						style={{
 							background:
 								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: 0,
+							top: "15rem",
 							right: 0,
 						}}
 					/>
@@ -183,24 +183,6 @@ export function Hackathon(): JSX.Element {
 					}}
 				>
 					<img src={Sicontact} alt="Sicontact logo" className="h-12 m-auto" />
-					<span
-						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
-						style={{
-							background:
-								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: "5rem",
-							right: "5rem",
-						}}
-					/>
-					<span
-						className="rounded-full w-48 h-48 absolute transform rotate-90 -z-1"
-						style={{
-							background:
-								"linear-gradient(90deg, #7D2742 0%, #732741 9.41%, #50283E 48.05%, #3A293D 79.62%, #32293C 100%)",
-							top: 0,
-							right: 0,
-						}}
-					/>
 				</p>
 			</div>
 		</div>
