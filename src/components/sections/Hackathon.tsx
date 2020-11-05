@@ -63,16 +63,16 @@ export function Hackathon(): JSX.Element {
 					Nyeremény
 				</h2>
 				<p
-					className="border-l-8 border-primary p-4 pb-16 text-lg relative"
+					className="border-l-8 border-primary p-4 pb-16 text-lg flex md:justify-center"
 					style={{
 						borderLeftWidth: "7px",
 					}}
 				>
-					I. 50.000Ft értékű BestByte utalvány
+					I. helyezés: 50.000Ft értékű BestByte utalvány
 					<br />
-					II. 15.000Ft értékű szabaduló szoba utalvány
+					II. helyezés: 15.000Ft értékű szabaduló szoba utalvány
 					<br />
-					III. Sicontact ajándékcsomag
+					III. helyezés: Sicontact ajándékcsomag
 					<span
 						className="rounded-full w-32 h-32 absolute transform rotate-45 -z-1"
 						style={{
@@ -101,50 +101,52 @@ export function Hackathon(): JSX.Element {
 					Programterv
 				</h2>
 				<p
-					className="border-l-8 border-primary p-4 pb-16 text-lg relative"
+					className="border-l-8 border-primary p-4 pb-16 text-lg flex md:justify-center"
 					style={{
 						borderLeftWidth: "7px",
 					}}
 				>
 					<div>
-						<div className="font-bold text-primary text-xl sm:leading-6">
-							11.13. (péntek)
+						<div>
+							<div className="font-bold text-primary text-xl md:text-2xl sm:leading-6">
+								11.13. (péntek)
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal">14:00 - 14:30</div>
+								<div>Megnyitó</div>
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal">14:30 - </div>
+								<div>Verseny</div>
+							</div>
 						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal">14:00 - 14:30</div>
-							<div>Megnyitó</div>
-						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal">14:30 - </div>
-							<div>Verseny</div>
-						</div>
-					</div>
 
-					<div>
-						<div className="font-bold text-primary text-xl sm:leading-6">
-							11.14. (szombat)
+						<div>
+							<div className="font-bold text-primary text-xl md:text-2xl sm:leading-6">
+								11.14. (szombat)
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal">egész nap</div>
+								<div>Verseny</div>
+							</div>
 						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal">egész nap</div>
-							<div>Verseny</div>
-						</div>
-					</div>
 
-					<div>
-						<div className="font-bold text-primary text-xl sm:leading-6">
-							11.15. (vasárnap)
-						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal pl-12">- 12:00</div>
-							<div>Verseny</div>
-						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal">12:30 - 14:00</div>
-							<div>Pitch</div>
-						</div>
-						<div className="grid w-full grid-cols-1 lg:grid-cols-tablelg lg:gap-12 my-4">
-							<div className="font-bold lg:font-normal">14:30 - </div>
-							<div>Eredményhirdetés</div>
+						<div>
+							<div className="font-bold text-primary text-xl md:text-2xl sm:leading-6">
+								11.15. (vasárnap)
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal pl-12">- 12:00</div>
+								<div>Verseny</div>
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal">12:30 - 14:00</div>
+								<div>Pitch</div>
+							</div>
+							<div className="grid w-full grid-cols-1 md:grid-cols-tablelg lg:gap-12 my-4">
+								<div className="font-bold lg:font-normal">14:30 - </div>
+								<div>Eredményhirdetés</div>
+							</div>
 						</div>
 					</div>
 					<span
