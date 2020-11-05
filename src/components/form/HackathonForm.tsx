@@ -238,8 +238,7 @@ export function HackathonForm(): JSX.Element {
 
 			<p className="col-span-2 p-3 pb-0 text-gray-500 italic text-xs">
 				*A jelentkezéssel hozzájárulok, hogy a szervezők a megadott adataimat
-				kapcsolatfelvétel céljából felhasználják és azt a feladat készítők
-				számára átadják.
+				kapcsolatfelvétel céljából felhasználják.
 			</p>
 		</form>
 	);
