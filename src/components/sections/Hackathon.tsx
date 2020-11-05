@@ -70,7 +70,7 @@ export function Hackathon(): JSX.Element {
 				>
 					I. helyezés: 50.000Ft értékű BestByte utalvány
 					<br />
-					II. helyezés: 15.000Ft értékű szabaduló szoba utalvány
+					II. helyezés: 17.000Ft értékű szabaduló szoba utalvány
 					<br />
 					III. helyezés: Sicontact ajándékcsomag
 					<span
