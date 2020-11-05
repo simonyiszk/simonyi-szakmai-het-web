@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
+import Logo from "../../assets/logos/simonyi_szakmai_het_feher.png";
+
 export function Navbar(): JSX.Element {
 	const [isOpen, toggleIsOpen] = React.useState(false);
 	const router = useRouter();
@@ -18,11 +20,7 @@ export function Navbar(): JSX.Element {
 			<div className="flex items-center justify-between p-0 h-60px">
 				<Link href="/">
 					<a className="block my-auto p-2 h-full">
-						<img
-							className="max-h-full"
-							src="static/logos/simonyi_szakmai_het_feher.png"
-							alt="Logó"
-						/>
+						<img className="max-h-full" src={Logo} alt="Logó" />
 					</a>
 				</Link>
 				<div className="sm:hidden">
