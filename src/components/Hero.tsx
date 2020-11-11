@@ -40,7 +40,7 @@ export function Hero(): JSX.Element {
 					Hét
 				</div>
 			</h1>
-			<h2 className="pl-12 md:pl-0 text-2xl mb-32 md:mb-8">November 13 - 18</h2>
+			<h2 className="pl-12 md:pl-0 text-2xl mb-32 md:mb-8">November 16 - 18</h2>
 
 			<div className="flex flex-col lg:flex-row">
 				{/* <Link href="/hackathon">
