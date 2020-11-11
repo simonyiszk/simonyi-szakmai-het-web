@@ -43,7 +43,7 @@ export function Hero(): JSX.Element {
 			<h2 className="pl-12 md:pl-0 text-2xl mb-32 md:mb-8">November 13 - 18</h2>
 
 			<div className="flex flex-col lg:flex-row">
-				<Link href="/hackathon">
+				{/* <Link href="/hackathon">
 					<a
 						className={clsx(
 							"border-primary border-2 p-1 m-4 block mx-auto",
@@ -60,7 +60,7 @@ export function Hero(): JSX.Element {
 							Hackathon
 						</div>
 					</a>
-				</Link>
+							</Link> */}
 
 				<Link href="/szakmaiest">
 					<a

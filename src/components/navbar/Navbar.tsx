@@ -51,7 +51,7 @@ export function Navbar(): JSX.Element {
 					"px-2 flex sm:flex sm:p-0 absolute flex-col sm:flex-row sm:relative w-full items-center justify-end sm:w-fitContent z-20",
 				)}
 			>
-				<Link href="/hackathon">
+				{/* <Link href="/hackathon">
 					<a
 						className={clsx(
 							"p-4 py-2 sm:py-1 hover:text-text focus:text-text",
@@ -61,7 +61,7 @@ export function Navbar(): JSX.Element {
 					>
 						Hackathon
 					</a>
-				</Link>
+						</Link> */}
 				<Link href="/szakmaiest">
 					<a
 						className={clsx(

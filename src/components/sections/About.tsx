@@ -23,7 +23,7 @@ export function About(): JSX.Element {
 				<br />
 				<br />
 				Így született meg a Simonyi Szakmai Hét, mely során online részt
-				vehettek egy Hackathonon a Szakmai e-Esten és a Minikonferenciánkon.
+				vehettek a Szakmai e-Esten és a Minikonferenciánkon.
 				<span
 					className="rounded-full w-48 h-48 absolute transform -rotate-45 -z-1"
 					style={{
