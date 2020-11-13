@@ -20,15 +20,12 @@ export function MiniKonf(): JSX.Element {
 					<h3 className="text-2xl">Megnyílt a regisztráció!</h3>
 					<br />
 					A Minikonferencián az informatika különböző területeiről hallhattok
-					előadásokat izgalmas előadásokat. Az esemény célja, hogy megmutassa az
+					izgalmas előadásokat. Az esemény célja, hogy megmutassa az
 					érdeklődöknek az IT világ sokszínűségét, bővítse látókörüket.
 					<br />
 					<br />
 					A konferencián a Simonyi Konferenciához képest hosszabb, mélyebb
 					tudást átadó előadásokra számíthattok.
-					<br />
-					<br />
-					Előadók hamarosan.
 					<span
 						className="rounded-full w-32 h-32 absolute transform -rotate-90 -z-1"
 						style={{
@@ -68,34 +65,58 @@ export function MiniKonf(): JSX.Element {
 				</a>
 			</div>
 			<Presenter
-				presenter="Whatever Yeetus"
-				timeAndPlace="15:45 @ Discord"
-				position="Simonyi Károly Szakkollégium"
-				presenterImage="/mstile-150x150.png"
-				title="Wery coolio title"
+				presenter="Biró Júlia"
+				timeAndPlace="11.17. 18:30 - 19:30"
+				position="Site reliability engineer at Contentful"
+				presenterImage="../static/presenters/julia.png"
+				title="Reliability engineering devops környezetben"
 			>
-				We understand that if you drive micro-mega-cyber-virally then you may
-				also reintermediate magnetically. If you incentivize dynamically, you
-				may also disintermediate perfectly. Without development, you will lack
-				architectures. A company that can incubate faithfully will (at some
-				undefined point of time in the future) be able to transition easily. We
-				apply the proverb A rolling stone gathers no moss not only on our
-				feature set, but our robust iteration and user-proof use.
+				Mi a reliability engineerség, mi a devops, és mi közük van ezeknek
+				egymáshoz? Be fogom mutatni a fő eszközöket, amiket a munkámhoz
+				használok, de nem konkrét technológiák mélységeibe akarok elmerülni,
+				hanem abban, hogy mik azok a fogalmak, stratégiák, megközelítések, amik
+				lehetővé teszik, hogy egy szolgáltatás magas rendelkezésreállású legyen.
+				Célom, hogy egy kis ízelítőt adjak azokból a problémákból, amikkel nap
+				mint nap foglalkozom.
 			</Presenter>
 			<Presenter
-				presenter="Whatever Yeetus"
-				timeAndPlace="15:45 @ Discord"
-				position="Simonyi Károly Szakkollégium"
-				presenterImage="/mstile-150x150.png"
-				title="Wery coolio title"
+				presenter="Hives Áron"
+				timeAndPlace="11.17. 19:35 - 20:35"
+				position="CTO at Edubase"
+				presenterImage="../static/presenters/aron.png"
+				title="Hogyan építettünk fel a hobbinkból egy saját vállalkozást? - avagy az EduBase története és fejlődése"
 			>
-				We understand that if you drive micro-mega-cyber-virally then you may
-				also reintermediate magnetically. If you incentivize dynamically, you
-				may also disintermediate perfectly. Without development, you will lack
-				architectures. A company that can incubate faithfully will (at some
-				undefined point of time in the future) be able to transition easily. We
-				apply the proverb A rolling stone gathers no moss not only on our
-				feature set, but our robust iteration and user-proof use.
+				Szeretnéd megismerni az EduBase oktatási platform történetét, hogy
+				hogyan lett egy egyszerű videós rendszerező weboldalból egy összetett,
+				bárki számára elérhető oktatási és vizsgáztató platform? Érdekel milyen
+				funkciók teszik a rendszert különlegessé, milyen nehézségekbe ütköztünk
+				az évek alatt vagy hogy hogyan alakult a hobbi projekt saját kis
+				vállalkozássá?
+			</Presenter>
+			<Presenter
+				presenter="Móricz Tamás"
+				timeAndPlace="11.18. 18:30 - 19:30"
+				position="Data Scientist at Aliz.ai"
+				presenterImage="../static/presenters/tamas.png"
+				title="Mit olvasol ma? Szövegmodellezés és ajánlórendszerek a gyakorlatban"
+			>
+				A résztvevők betekintést kapnak a szövegmodellezés alapjaiba és egy
+				ipari példán keresztül a valós ajánlórendszer működésébe és a hozzájuk
+				szükséges technológiákba, gyakorlati megfontolásokba.
+			</Presenter>
+			<Presenter
+				presenter="Gema Barnabás"
+				timeAndPlace="11.18. 19:35 - 20:35"
+				position="Software Engineer at Shap3r"
+				presenterImage="../mstile-150x150.png"
+				title="Egy tech cég szerverek nélkül"
+			>
+				Körülbelül hat évvel ezelőtt jelent meg az AWS Lambda, az első népszerű
+				Function as a Service szolgáltatás, ami megalapozta a ma már egyre több
+				területet lefedő serverless modellt. Előadásomban megmutatom, hogy a
+				Shapr3D-nél miért döntöttünk a modell használata mellett, hogyan írjuk a
+				backend szolgáltatásaink ebben a szellemben, hogyan üzemeltetjük őket,
+				illetve hogy hogyan vertelek át az előadás címével.
 			</Presenter>
 		</div>
 	);
