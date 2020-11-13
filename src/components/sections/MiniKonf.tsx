@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Presenter } from "components/presenter/Presenter";
 
 export function MiniKonf(): JSX.Element {
 	return (
@@ -16,7 +17,7 @@ export function MiniKonf(): JSX.Element {
 						borderLeftWidth: "7px",
 					}}
 				>
-					<div className="text-2xl">Megnyílt a regisztráció!</div>
+					<h3 className="text-2xl">Megnyílt a regisztráció!</h3>
 					<br />
 					A Minikonferencián az informatika különböző területeiről hallhattok
 					előadásokat izgalmas előadásokat. Az esemény célja, hogy megmutassa az
@@ -66,6 +67,36 @@ export function MiniKonf(): JSX.Element {
 					</div>
 				</a>
 			</div>
+			<Presenter
+				presenter="Whatever Yeetus"
+				timeAndPlace="15:45 @ Discord"
+				position="Simonyi Károly Szakkollégium"
+				presenterImage="/mstile-150x150.png"
+				title="Wery coolio title"
+			>
+				We understand that if you drive micro-mega-cyber-virally then you may
+				also reintermediate magnetically. If you incentivize dynamically, you
+				may also disintermediate perfectly. Without development, you will lack
+				architectures. A company that can incubate faithfully will (at some
+				undefined point of time in the future) be able to transition easily. We
+				apply the proverb A rolling stone gathers no moss not only on our
+				feature set, but our robust iteration and user-proof use.
+			</Presenter>
+			<Presenter
+				presenter="Whatever Yeetus"
+				timeAndPlace="15:45 @ Discord"
+				position="Simonyi Károly Szakkollégium"
+				presenterImage="/mstile-150x150.png"
+				title="Wery coolio title"
+			>
+				We understand that if you drive micro-mega-cyber-virally then you may
+				also reintermediate magnetically. If you incentivize dynamically, you
+				may also disintermediate perfectly. Without development, you will lack
+				architectures. A company that can incubate faithfully will (at some
+				undefined point of time in the future) be able to transition easily. We
+				apply the proverb A rolling stone gathers no moss not only on our
+				feature set, but our robust iteration and user-proof use.
+			</Presenter>
 		</div>
 	);
 }

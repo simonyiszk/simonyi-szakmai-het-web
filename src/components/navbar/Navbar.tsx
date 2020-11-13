@@ -14,6 +14,9 @@ export function Navbar(): JSX.Element {
 		<header
 			className={clsx(
 				"sm:flex sm:justify-between sm:items-center sticky top-0 text-xl z-20",
+				router.pathname !== "/" && router.pathname !== "/szakmaihet"
+					? "bg-backgroundBlue"
+					: "bg-transparent",
 				isOpen ? "bg-backgroundBlue" : "bg-transparent",
 			)}
 		>
