@@ -107,7 +107,7 @@ export function MiniKonf(): JSX.Element {
 			<Presenter
 				presenter="Gema Barnabás"
 				timeAndPlace="11.18. 19:35 - 20:35"
-				position="Software Engineer at Shap3r"
+				position="Software Engineer at Shapr3D"
 				presenterImage="../mstile-150x150.png"
 				title="Egy tech cég szerverek nélkül"
 			>
