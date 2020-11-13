@@ -10,7 +10,7 @@ export function About(): JSX.Element {
 			</h2>
 
 			<p
-				className="border-l-8 border-t-8 border-primary p-4 pb-16 mb-16 text-lg relative"
+				className="border-l-8 border-t-8 border-primary p-4 mb-16 text-lg relative"
 				style={{
 					borderLeftWidth: "7px",
 				}}
