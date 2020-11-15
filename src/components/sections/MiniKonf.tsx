@@ -82,7 +82,7 @@ export function MiniKonf(): JSX.Element {
 			<Presenter
 				presenter="Hives Áron"
 				timeAndPlace="11.17. 19:35 - 20:35"
-				position="CTO at Edubase"
+				position="CTO at EduBase"
 				presenterImage="../static/presenters/aron.png"
 				title="Hogyan építettünk fel a hobbinkból egy saját vállalkozást? - avagy az EduBase története és fejlődése"
 			>
